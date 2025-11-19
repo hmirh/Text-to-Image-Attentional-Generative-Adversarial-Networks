@@ -241,8 +241,7 @@ end_t = time.time()
 print(’Total time for training:’, end_t - start_t)
 ```
 
-For inserting new text descriptions to the network, there is a file whose name is ”example captions.txt”
-in ~/AttnGAN/data/birds. The location of this file is defined
-in the ”main.py” and it contains the list of text descriptions that should be inserted into the network.
+For inserting new text descriptions into the network, there is a file whose name is "example captions.txt"
+in ~/AttnGAN/data/birds. The location of this file is defined in the ”main.py”, and it contains the list of text descriptions that should be inserted into the network.
 After running the code, the generated images will be located in a folder with the name ”example captions”
 in the ~/AttnGAN/models/bird_AttnDCGAN2 repository.
