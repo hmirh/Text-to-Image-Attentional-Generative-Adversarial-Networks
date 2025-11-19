@@ -151,7 +151,6 @@ continue
 filepath = ’%s/%s.txt’ % (cfg.DATA_DIR, name)
 with open(filepath, "r") as f:
 print(’Load from:’, name)
-3
 sentences = f.read().decode(’utf8’).split(’\n’)
 # a list of indices for a sentence
 captions = []
@@ -199,7 +198,6 @@ print(’Using config:’)
 pprint.pprint(cfg)
 if not cfg.TRAIN.FLAG:
 args.manualSeed = 100
-4
 elif args.manualSeed is None:
 args.manualSeed = random.randint(1, 10000)
 random.seed(args.manualSeed)
