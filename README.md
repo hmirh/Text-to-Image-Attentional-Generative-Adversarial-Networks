@@ -232,10 +232,7 @@ start_t = time.time()
 if cfg.TRAIN.FLAG:
 algo.train()
 else:
-’’’
-generate images from pre-extracted embeddings
-
-’’’
+"generate images from pre-extracted embeddings"
 if cfg.B_VALIDATION:
 algo.sampling(split_dir) # generate images for the whole valid dataset
 else:
